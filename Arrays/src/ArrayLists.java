@@ -14,7 +14,7 @@ public class ArrayLists {
 
         System.out.println("There are "+students.size()+ " students");
 
-        // Using an iterator
+        // Using an iterator to check if item has next.
         Iterator<String> studentIterator = students.iterator();
         while(studentIterator.hasNext()){
             String Student = studentIterator.next();
