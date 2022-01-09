@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayLists {
     public static void main(String[] args) {
@@ -7,8 +8,20 @@ public class ArrayLists {
         students.add("Joe Blogs");
         students.add("Jane Doe");
         students.add("Jack Black");
+        students.add("Zack Goldbloom");
+        students.add("John Toogood");
+        students.add("Elon Rusk");
 
         System.out.println("There are "+students.size()+ " students");
+
+        // Using an iterator
+        Iterator<String> studentIterator = students.iterator();
+        while(studentIterator.hasNext()){
+            String Student = studentIterator.next();
+            System.out.println("First Name: " + Student.split(" ")[0]);
+        }
+
+
 
         //Modify arrayList behaviour
         System.out.println("Attempting to remove Jane! Standby...");
